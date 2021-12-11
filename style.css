@@ -1,0 +1,63 @@
+body{
+    background-color: rosybrown;
+}
+.board{
+    box-sizing: border-box;
+    background-color: tan;
+    width: 600px;
+    margin: 0 auto;
+}
+.row{
+    box-sizing: border-box;
+    width: 600px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+}
+.cell{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 175px;
+    text-align: center;
+
+}
+.cell:hover{
+    box-sizing: border-box;
+    background-color: rgb(143, 123, 96);
+}
+.options{
+    display: block;
+    text-align: center;
+    width: 600px;
+    margin: 25px auto ;
+}
+.state{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.mainButton{
+    border: none;
+    width: 75px;
+    height: 35px;
+    color: rgb(143, 123, 96);
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+.newButton{
+    border: none;
+    width: 75px;
+    height: 35px;
+    color: rgb(143, 123, 96);
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0 25px;
+}
