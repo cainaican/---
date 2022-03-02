@@ -9,7 +9,7 @@ body{
 }
 .row{
     box-sizing: border-box;
-    width: 600px;
+    width: 100%;
     height: 200px;
     display: flex;
     flex-direction: row;
@@ -60,4 +60,67 @@ body{
     font-weight: bold;
     font-size: 22px;
     margin: 0 25px;
+}
+@media(max-width: 700px) {
+    .board{
+        width: 450px;
+    }
+    .row{
+        width: 450px;
+        height: 150px;
+    }
+    .options{
+        width: 450px;
+    }
+    .cell{
+        font-size: 125px;
+    }
+}
+@media(max-width: 550px) {
+    .board{
+        width: 390px;
+    }
+    .row{
+        width: 390px;
+        height: 130px;
+    }
+    .options{
+        width: 350px;
+    }
+    .cell{
+        font-size: 100px;
+    }
+}
+@media(max-width: 430px) {
+    .board{
+        width: 300px;
+    }
+    .row{
+        width: 300px;
+        height: 100px;
+    }
+    .options{
+        width: 300px;
+    }
+    .cell:active, .cell:focus, .cell:hover, .cell:target {
+        box-sizing: border-box;
+        background-color: tan;
+        animation: anim 1s linear 0s 1 ;
+    }
+    .cell{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: 55px;
+    }
+}
+@keyframes anim {
+    0% {
+        background-color: rgb(143, 123, 96);
+    }
+    100% {
+        background-color: tan;
+    }
 }
